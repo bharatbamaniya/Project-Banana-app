@@ -11,7 +11,16 @@ function getTraslationURL(text) {
 }
 
 function errorHandler(error) {
+
+    fetch(getTraslationURL(error))
+        .then(response => response.json())
+        .then(json => {
+            outputDiv.innerHTML = json.error.code + "\n" +json.error.message
+        })
+        .catch(errorHandler);
+
     console.log("error occured",error)
+    
     alert("somethign wrong with server! try again after some time...")
 }
 
