@@ -9,7 +9,6 @@
 }
 body {
   margin: 0;
-  /* margin-bottom: 4rem; */
   font-family: "Kalam", cursive;
   color: var(--black);
 }
@@ -30,6 +29,7 @@ textarea {
   padding: 1rem;
   margin: 1rem 0rem;
   font-family: "Kalam", "cursive";
+  margin-bottom: 10rem;
 }
 nav {
   background-color: var(--primary);
